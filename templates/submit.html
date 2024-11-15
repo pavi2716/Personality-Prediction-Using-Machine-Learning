@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Prediction Result</title>
+    <!--link rel="stylesheet" type="text/css" href="C:\Users\91934\Desktop\python\dummy\static\style.css"-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container2">
+        <h1>Predicted Personality</h1>
+        <p>Your predicted personality is: {{ answer }}</p>
+        <a href="{{ url_for('home') }}">Go Back</a>
+    </div>
+</body>
+</html>
