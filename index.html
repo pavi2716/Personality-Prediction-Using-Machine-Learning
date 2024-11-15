@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Prediction</title>
+    
+    <!--link rel="stylesheet" href="C:\Users\91934\Desktop\mini project\static\style.css"-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container1">
+        <h1>Predict Your Personality</h1>
+        <form action="/submit" method="post">
+            <label for="Gender">Gender:</label>
+            <select name="Gender" id="Gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select><br>
+            <label for="Age">Age:</label>
+            <input type="text" name="Age" id="Age" placeholder="Enter Your age" required><br>
+
+            <label for="openness">Openness:</label>
+            <input type="text" name="openness" id="openness" placeholder="Rate Yourself From 1-8" min="1" max="8" step="1" required><br>
+
+            <label for="neuroticism">Neuroticism:</label>
+            <input type="text" name="neuroticism" id="neuroticism" placeholder="Rate Yourself From 1-8"  min="1" max="8" step="1" required><br>
+
+            <label for="conscientiousness">Conscientiousness:</label>
+            <input type="text" name="conscientiousness" id="conscientiousness" placeholder="Rate Yourself From 1-8"  min="1" max="8" step="1" required><br>
+
+            <label for="agreeableness">Agreeableness:</label>
+            <input type="text" name="agreeableness" id="agreeableness" placeholder="Rate Yourself From 1-8"  min="1" max="8" step="1" required><br>
+
+            <label for="extraversion">Extraversion:</label>
+            <input type="text" name="extraversion" id="extraversion" placeholder="Rate Yourself From 1-8"  min="1" max="8" step="1" required><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
