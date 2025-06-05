@@ -24,17 +24,18 @@ This project aims to predict an individual's personality type based on psycholog
 
 **💡 Features**
 
-Preprocessed Dataset: Gender encoded numerically, and features standardized using StandardScaler.
+Preprocessed Dataset: Gender encoded numerically, and features standardized using **StandardScaler**.
 
-Model Training: Logistic Regression optimized via GridSearchCV for best parameters.
+Model Training: **Logistic Regression** optimized via **GridSearchCV** for best parameters.
 
 Model Evaluation: Evaluated on a separate test dataset.
 
-Web App: Built using Flask with interactive user input form and result display.
+Web App: Built using **Flask** with interactive user input form and result display.
 
-Model Persistence: joblib used to save and load the trained model and scaler.
+Model Persistence: **joblib** used to save and load the trained model and scaler.
 
 **🚀 How It Works**
+
 User inputs gender, age, and trait scores (1–8 scale).
 
 Input is transformed using the pre-fitted scaler.
